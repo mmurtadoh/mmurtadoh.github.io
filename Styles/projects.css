@@ -1,0 +1,466 @@
+/* =========================================
+   PROJECTS HERO
+========================================= */
+
+.projects-hero {
+    padding: 105px 30px;
+    background:
+        radial-gradient(circle at 85% 20%,
+        rgba(94, 145, 195, 0.22), transparent 30%),
+        linear-gradient(120deg, #10263f, #1d4167);
+
+    position: relative;
+    overflow: hidden;
+}
+
+.projects-hero::before {
+    content: "";
+    position: absolute;
+    width: 380px;
+    height: 380px;
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 50%;
+    right: -100px;
+    top: -170px;
+}
+
+.projects-hero::after {
+    content: "";
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    border: 1px solid rgba(255,255,255,0.09);
+    border-radius: 50%;
+    right: 130px;
+    bottom: -160px;
+}
+
+.projects-hero-content {
+    max-width: 1200px;
+    margin: auto;
+    position: relative;
+    z-index: 2;
+}
+
+.projects-hero .section-label {
+    color: #a9c9e8;
+}
+
+.projects-hero h1 {
+    color: var(--white);
+    font-size: clamp(40px, 5vw, 58px);
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: -1.5px;
+    margin-bottom: 22px;
+}
+
+.projects-hero h1 span {
+    color: #8db9e4;
+}
+
+.projects-hero-content > p:last-child {
+    max-width: 680px;
+    color: #d3dfeb;
+    font-size: 15px;
+    line-height: 1.9;
+}
+
+
+/* =========================================
+   PROJECTS SECTION
+========================================= */
+
+.projects-section {
+    padding: 90px 30px;
+    background: #f4f7fb;
+}
+
+.projects-heading {
+    max-width: 1200px;
+    margin: 0 auto 45px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 40px;
+}
+
+.projects-heading h2 {
+    color: var(--navy);
+    font-size: 35px;
+    font-weight: 800;
+}
+
+.projects-heading > p {
+    max-width: 430px;
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+
+/* =========================================
+   PROJECT GRID
+========================================= */
+
+.projects-grid {
+    max-width: 1200px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.project-card {
+    background: var(--white);
+    border: 1px solid #e0e8f1;
+    border-radius: 11px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(20,43,69,0.06);
+    transition: all 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 20px 45px rgba(20,43,69,0.12);
+}
+
+
+/* =========================================
+   PROJECT VISUAL PANELS
+========================================= */
+
+.project-visual {
+    height: 205px;
+    padding: 22px 25px;
+    position: relative;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.azure-visual {
+    background: linear-gradient(120deg, #173c63, #3976aa);
+}
+
+.linux-visual {
+    background: linear-gradient(120deg, #172b40, #405c77);
+}
+
+.network-visual {
+    background: linear-gradient(120deg, #1b3857, #527a9f);
+}
+
+.hardware-visual {
+    background: linear-gradient(120deg, #24394f, #607b94);
+}
+
+.project-visual::after {
+    content: "";
+    position: absolute;
+    width: 230px;
+    height: 230px;
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 50%;
+    right: -60px;
+    bottom: -135px;
+}
+
+.project-category {
+    color: #dce9f6;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    position: relative;
+    z-index: 2;
+}
+
+.visual-content {
+    position: relative;
+    z-index: 2;
+}
+
+.visual-main {
+    display: block;
+    color: white;
+    font-family: 'Manrope', sans-serif;
+    font-size: 35px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.visual-sub {
+    display: block;
+    color: #d5e3f0;
+    font-size: 12px;
+    margin-top: 3px;
+}
+
+
+/* =========================================
+   PROJECT DETAILS
+========================================= */
+
+.project-details {
+    padding: 28px;
+}
+
+.project-meta {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 16px;
+}
+
+.project-meta span {
+    color: var(--blue);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+}
+
+.project-meta span:last-child {
+    background: var(--light-blue);
+    padding: 4px 9px;
+    border-radius: 4px;
+}
+
+.project-details h3 {
+    color: var(--navy);
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 13px;
+}
+
+.project-details > p {
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.9;
+    margin-bottom: 23px;
+}
+
+.technology-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9px;
+}
+
+.technology-list span {
+    color: #405c77;
+    background: #f0f4f8;
+    border: 1px solid #e2eaf2;
+    padding: 6px 11px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+
+/* =========================================
+   CLOSING SECTION
+========================================= */
+
+.projects-closing {
+    padding: 85px 30px;
+    text-align: center;
+    background: linear-gradient(120deg, #eaf1f8, #f7f9fc);
+}
+
+.projects-closing h2 {
+    color: var(--navy);
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.projects-closing > p:not(.section-label) {
+    max-width: 650px;
+    margin: 0 auto 27px;
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+
+/* =========================================
+   RESPONSIVE DESIGN
+========================================= */
+
+@media (max-width: 800px) {
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .projects-heading {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+}
+
+@media (max-width: 650px) {
+
+    .projects-hero {
+        padding: 75px 25px;
+    }
+
+    .projects-hero h1 {
+        font-size: 38px;
+    }
+
+    .projects-section {
+        padding: 65px 22px;
+    }
+
+    .projects-heading h2 {
+        font-size: 29px;
+    }
+
+    .project-visual {
+        height: 180px;
+    }
+
+    .project-details {
+        padding: 23px;
+    }
+
+    .projects-closing {
+        padding: 65px 25px;
+    }
+
+    .projects-closing h2 {
+        font-size: 27px;
+    }
+
+}
+/* =========================================
+   ADDITIONAL PROJECT VISUALS
+========================================= */
+
+.windows-visual {
+    background: linear-gradient(120deg, #102d4c, #346a9d);
+}
+
+.automation-visual {
+    background: linear-gradient(120deg, #153d39, #347d70);
+}
+
+.router-visual {
+    background: linear-gradient(120deg, #183653, #4c789c);
+}
+
+
+/* =========================================
+   PROJECT LINKS
+========================================= */
+
+.project-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+
+    margin-top: 25px;
+    padding-top: 17px;
+
+    border-top: 1px solid var(--border);
+
+    color: var(--blue);
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 700;
+
+    transition: all 0.25s ease;
+}
+
+.project-link span {
+    font-size: 19px;
+    transition: transform 0.25s ease;
+}
+
+.project-link:hover {
+    color: var(--navy);
+}
+
+.project-link:hover span {
+    transform: translateX(5px);
+}
+
+
+/* Placeholder links */
+
+.pending-link {
+    color: #8493a5;
+    cursor: pointer;
+}
+
+.pending-link:hover {
+    color: #8493a5;
+}
+
+.pending-link:hover span {
+    transform: none;
+}
+
+
+/* =========================================
+   PRACTICAL EXPERIENCE SECTION
+========================================= */
+
+.practical-section {
+    background: linear-gradient(180deg, #edf3f9, #f7f9fc);
+}
+
+
+/* =========================================
+   ONGOING PROJECT SECTION
+========================================= */
+
+.ongoing-section {
+    background: #ffffff;
+}
+
+.ongoing-grid {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.ongoing-card {
+    border-top: 3px solid var(--blue);
+}
+
+.status-badge {
+    color: #256b50 !important;
+    background: #e7f4ed !important;
+    padding: 5px 11px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 800;
+}
+
+
+/* =========================================
+   RESPONSIVE ADJUSTMENTS
+========================================= */
+
+@media (max-width: 800px) {
+
+    .ongoing-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* PERSONAL PORTFOLIO WEBSITE */
+
+.portfolio-visual {
+    background:
+        radial-gradient(circle at 80% 20%, rgba(255,255,255,0.16), transparent 30%),
+        linear-gradient(135deg, #172f4b, #3973a5);
+}
